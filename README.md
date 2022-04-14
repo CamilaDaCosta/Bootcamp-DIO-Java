@@ -48,5 +48,18 @@ Enviar o novo branch para o Github
 git push -u origin main
 ```
 
+Desfazer um Push (3 passos):
+```
+git reset --mixed hash-do-penultimo-commit 
+git stash
+```
+
+```
+git revert hash-do-ultimo-commit
+```
+
+```
+git stash apply
+```
 ## Links Úteis
 [Sintaxe Básica Markdown](https://www.markdownguide.org/basic-syntax)
